@@ -565,24 +565,24 @@ body {
   letter-spacing: -0.02em;
 }
 
-.service-visual {
-  height: 300px;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 0.85rem;
-  border: 1px solid rgba(212, 165, 116, 0.1);
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.service-item p {
+  max-width: 420px;
+  min-height: 86px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
-.service-item:hover .service-visual {
-  border-color: rgba(212, 165, 116, 0.3);
-  background: rgba(212, 165, 116, 0.05);
+.service-index,
+.location-route {
+  display: block;
+  margin-top: 38px;
+  color: var(--gold);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 /* ==================== LOCATIONS SECTION ==================== */
@@ -616,24 +616,21 @@ body {
 }
 
 .location-image {
-  height: 300px;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 2px;
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.2);
-  transition: all 0.4s ease;
-  overflow: hidden;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.location-item {
+  padding: 28px 0 30px;
+  border-top: 1px solid var(--border);
 }
 
-.location-item:hover .location-image {
+.location-item p {
+  max-width: 280px;
+  min-height: 52px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.location-item:hover {
   border-color: var(--gold);
-  background: rgba(212, 165, 116, 0.08);
 }
 
 /* ==================== WORK/GALLERY SECTION ==================== */
@@ -656,6 +653,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: all 0.4s ease;
+  min-height: 250px;
 }
 
 .gallery-item.large {
@@ -672,22 +670,19 @@ body {
   transform: scale(1.01);
 }
 
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(212, 165, 116, 0.04), rgba(50, 50, 50, 0.04));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.project-number {
+  padding: 28px;
+  color: var(--gold);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  transition: transform 0.4s ease;
 }
 
-.gallery-item:hover .gallery-image {
-  background: linear-gradient(135deg, rgba(212, 165, 116, 0.12), rgba(50, 50, 50, 0.08));
+.gallery-item:hover .project-number {
+  transform: translate(8px, -8px);
 }
 
 .gallery-caption {
