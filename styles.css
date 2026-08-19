@@ -515,6 +515,43 @@ body {
   color: var(--gold);
 }
 
+.about-pillars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-pillars li {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.16);
+  transition: padding-left 0.3s ease, color 0.3s ease;
+}
+
+.about-pillars li:first-child {
+  border-top: 1px solid rgba(212, 165, 116, 0.16);
+}
+
+.about-pillars li:hover {
+  padding-left: 8px;
+}
+
+.about-pillars li span {
+  color: var(--gold);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.about-pillars li strong {
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  letter-spacing: 0.02em;
+}
+
 .about-signature {
   display: flex;
   align-items: center;
